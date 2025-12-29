@@ -1,6 +1,6 @@
 // See README.md for license details.
 
-package gcd
+package EDmnist
 
 import chisel3._
 import chisel3.experimental.BundleLiterals._
@@ -12,18 +12,19 @@ import org.scalatest.matchers.must.Matchers
   * This is a trivial example of how to run this Specification
   * From within sbt use:
   * {{{
-  * testOnly gcd.GCDSpec
+  * testOnly EDmnist
   * }}}
   * From a terminal shell use:
   * {{{
-  * sbt 'testOnly gcd.GCDSpec'
+  * sbt 'testOnly ED.EDmnist'
   * }}}
   * Testing from mill:
   * {{{
-  * mill %NAME%.test.testOnly gcd.GCDSpec
+  * mill %NAME%.test.testOnly ED.EDmnist'
   * }}}
   */
-class GCDSpec extends AnyFreeSpec with Matchers with ChiselSim {
+
+class EDmnist extends AnyFreeSpec with Matchers with ChiselSim {
 
   "Gcd should calculate proper greatest common denominator" in {
     simulate(new DecoupledGcd(16)) { dut =>
