@@ -1,0 +1,10 @@
+name = "EDmnist"
+version = "0.1.0"
+defaultTargets = ["edmnist"]
+
+[[lean_lib]]
+name = "EDmnist"
+
+[[lean_exe]]
+name = "edmnist"
+root = "Main"
